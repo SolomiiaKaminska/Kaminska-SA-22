@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/sidr.dark.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/sidr.js"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Open+Sans|Oswald|PT+Serif:400,700|Playfair+Display:400,400i|Poppins:400i,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>Louvre | Gallery</title>
+</head>
+<body>
+    <div class="fon fon-gal">
+        <div class="container">
+            <div class="nav">
+                <div class="mob-header-menu">
+                    <a id="mob-menu" href="#sidr"><img src="images/mob-menu.png" /></a>
+                    <span><a href="index.html"><img src="images/logo.png" /></a></span>
+                </div>
+                <div id="sidr">
+                    <ul>
+                        <li><a href="index.html" class="active">Головна</a></li>
+                        <li><a href="about-us.html">Про нас</a></li>
+                        <li><a href="history.html">Історія </a></li>
+                        <li><a href="road.html">Як добратись </a></li>
+                        <li><a href="time.html">Час відвідування та ціни</a></li>
+                        <li class=" active"><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="mainmenu">
+                    <div class="nav_toggle"><a href="index.html"><img src="images/logo.png" /></a></div>
+                    <div class="nav_toggle"><a href="about-us.html">Про нас</a></div>
+                    <div class="nav_toggle"><a href="history.html">Історія</a></div>
+                    <div class="nav_toggle"><a href="road.html">Як добратись</a></div>
+                    <div class="nav_toggle"><a href="time.html">Час відвідування та ціни</a></div>
+                    <div class="nav_toggle gallery-item">
+                        <a href="gallery.html">Галерея</a>
+                        <ul>
+                            <li><a href="part1.html">Частина 1</a></li>
+                            <li><a href="part2.html">Частина 2</a></li>
+                            <li><a href="part3.html">Частина 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_toggle"><a href="contact.html">Контакти</a></div>
+                    <div class="inst">
+                        <a href="https://www.instagram.com/museelouvre/?igshid=1c13icd83vuh4" target="_blank"><img class="nav_toggle_p" src="images/inst1.png" width="50" height="50" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-container1">
+            <h2>ГАЛЕРЕЯ</h2>
+
+        </div>
+        <div class="part2">
+            <h1>Частина 2</h1>
+            <ul class="gallery clearfix">
+                <li><a href="images/C11.jpg" rel="prettyPhoto" title="Луї Жозеф ле Лорен - Архітектурне капріччо"><img src="images/C11.jpg" alt="Архітектурне капріччо" /></a></li>
+                <li><a href="images/C12.jpg" rel="prettyPhoto" title="Есташ Лесюер - Благовіщення"> <img src="images/C12.jpg" alt="Благовіщення" /></a></li>
+                <li><a href="images/C13.jpg" rel="prettyPhoto" title="Жан-Оноре Фрагонар - Дитя з квітами"> <img src="images/C13.jpg" alt="Дитя з квітами" /></a></li>
+                <li><a href="images/C14.jpg" rel="prettyPhoto" title="Карло Маратті - Спляче немовля Ісус з ангелами"> <img src="images/C14.jpg" alt="Спляче немовля Ісус з ангелами" /></a></li>
+                <li><a href="images/C15.jpg" rel="prettyPhoto" title="Ель Греко - Розп'яття з двома донаторами"> <img src="images/C15.jpg" alt="Розп'яття з двома донаторами" /></a></li>
+                <li><a href="images/C16.jpg" rel="prettyPhoto" title="Луїза-Елізабет Лебрен - Мадам Руссо з дочкою"><img src="images/C16.jpg" alt="Мадам Руссо з дочкою" /></a></li>
+                <li><a href="images/C17.jpg" rel="prettyPhoto" title="Бернардо Строцці - Мадонна Правосуддя"> <img src="images/C17.jpg" alt="Мадонна Правосуддя" /></a></li>
+                <li><a href="images/C18.jpg" rel="prettyPhoto" title="Гвідо Рені - Христос вручає Петру ключі від Раю"> <img src="images/C18.jpg" alt="Христос вручає Петру ключі від Раю" /></a></li>
+                <li><a href="images/C19.jpg" rel="prettyPhoto" title="Жан-Домінік Енгр - Портрет молодої людини"> <img src="images/C19.jpg" alt="Портрет молодої людини" /></a></li>
+                <li><a href="images/C20.jpg" rel="prettyPhoto" title="Жак-Огюстен Пажу - Мадмуазелі Дюваль"> <img src="images/C20.jpg" alt="Мадмуазелі Дюваль" /></a></li>
+            </ul>
+        </div>
+    </div>
+
+   
+    <script>
+        $(document).ready(function () {
+            $("area[rel^='prettyPhoto']").prettyPhoto();				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true, });
+			
+            $('#mob-menu').sidr({
+                name: 'sidr',
+                speed: 200,
+                side: 'left',
+                source: null,
+                renaming: true,
+                body: 'body',
+                displace: true,
+                timing: 'ease',
+                method: 'toggle',
+                bind: 'touchstart click',
+                onOpen: function onOpen() { },
+                onClose: function onClose() { },
+                onOpenEnd: function onOpenEnd() { },
+                onCloseEnd: function onCloseEnd() { }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/sidr.dark.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/sidr.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Open+Sans|Oswald|PT+Serif:400,700|Playfair+Display:400,400i|Poppins:400i,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>Louvre | History</title>
+</head>
+<body>
+    <div class="fon fon-history">
+        <div class="container">
+            <div class="nav">
+                <div class="mob-header-menu">
+                    <a id="mob-menu" href="#sidr"><img src="images/mob-menu.png" /></a>
+                    <span><a href="index.html"><img src="images/logo.png" /></a></span>
+                </div>
+                <div id="sidr">
+                    <ul>
+                        <li><a href="index.html" class="active">Головна</a></li>
+                        <li><a href="about-us.html">Про нас</a></li>
+                        <li class=" active"><a href="history.html">Історія </a></li>
+                        <li><a href="road.html">Як добратись </a></li>
+                        <li><a href="time.html">Час відвідування та ціни</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="mainmenu">
+                    <div class="nav_toggle"><a href="index.html"><img src="images/logo.png" /></a></div>
+                    <div class="nav_toggle"><a href="about-us.html">Про нас</a></div>
+                    <div class="nav_toggle"><a href="history.html">Історія</a></div>
+                    <div class="nav_toggle"><a href="road.html">Як добратись</a></div>
+                    <div class="nav_toggle"><a href="time.html">Час відвідування та ціни</a></div>
+                    <div class="nav_toggle gallery-item">
+                        <a href="gallery.html">Галерея</a>
+                        <ul>
+                            <li><a href="part1.html">Частина 1</a></li>
+                            <li><a href="part2.html">Частина 2</a></li>
+                            <li><a href="part3.html">Частина 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_toggle"><a href="contact.html">Контакти</a></div>
+                    <div class="inst">
+                        <a href="https://www.instagram.com/museelouvre/?igshid=1c13icd83vuh4" target="_blank"><img class="nav_toggle_p" src="images/inst1.png" width="50" height="50" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-container">
+            <h2>ІСТОРІЯ</h2>
+            У 1528 року Велику вежу Лувра зруйнували за наказом короля Франциска I (François I) - як занепалу і морально застарілу (її чудово збереглося підставу можна побачити зараз в музеї, подивіться на фото внизу). А на її місці через пару десятиліть почали будувати королівську резиденцію. Три з гаком століття пройшло, не один десяток монархів змінився, поки при імператорі Наполеона III в 1852 році архітектори і будівельники не поставили крапку в справі створення Лувру, розпочатому Франциском - сміливцем, воякою, покровителем муз, який запросив в країну італійських майстрів на чолі з Леонардо да Вінчі, які дали чарівний поштовх французькому Ренесансу.
+            Всі ці роки королі та імператори зі своїх походів привозили в Лувр скульптури, давнину з усіх кінців світу, викуповували роботи у художників. Звичайно, спочатку колекція була доступна тільки аристократії, але після Великої французької революції, в 1793-м, двері Лувру відкрилися для представників усіх станів.
+            До 1989 року, до 200-річчя революції, президент Франції Франсуа Міттеран (François Mitterrand) розпорядився збудувати на подвір'ї Лувру чотири скляні піраміди і фонтани за проектом американського архітектора китайського походження Йо Мін Пея. По-іншому його ім'я пишеться як бей юймін (до речі, в квітні 2017 роки йому виповниться 100 років). Не всім сподобалася ця ідея, багато хто визнав блюзнірством поява хай-тека на тлі будівель в стилі класицизму. Але, як і у випадку з Ейфелевою вежею, піраміди Лувру дуже скоро стали для парижан рідними. І не тільки для парижан. Вперше побачивши це скляне диво, я зрозумів, наскільки правильним і доречним було рішення спорудити піраміди тут: їх чіткі лінії прекрасно відтіняють старі стіни палацу.
+        </div>
+    </div>
+
+   
+    <script>
+        $(document).ready(function () {
+            $('#mob-menu').sidr({
+                name: 'sidr',
+                speed: 200,
+                side: 'left',
+                source: null,
+                renaming: true,
+                body: 'body',
+                displace: true,
+                timing: 'ease',
+                method: 'toggle',
+                bind: 'touchstart click',
+                onOpen: function onOpen() { },
+                onClose: function onClose() { },
+                onOpenEnd: function onOpenEnd() { },
+                onCloseEnd: function onCloseEnd() { }
+            });
+        });
+    </script>
+</body>
+</html>

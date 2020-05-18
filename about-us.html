@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/sidr.dark.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/sidr.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Open+Sans|Oswald|PT+Serif:400,700|Playfair+Display:400,400i|Poppins:400i,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>Louvre | About Us</title>
+</head>
+<body>
+    <div class="fon fon-about-us">
+        <div class="container">
+            <div class="nav">
+                <div class="mob-header-menu">
+                    <a id="mob-menu" href="#sidr"><img src="images/mob-menu.png" /></a>
+                    <span><a href="index.html"><img src="images/logo.png" /></a></span>
+                </div>
+                <div id="sidr">
+                    <ul>
+                        <li><a href="index.html" class="active">Головна</a></li>
+                        <li class=" active"><a href="about-us.html">Про нас</a></li>
+                        <li><a href="history.html">Історія </a></li>
+                        <li><a href="road.html">Як добратись </a></li>
+                        <li><a href="time.html">Час відвідування та ціни</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="mainmenu">
+                    <div class="nav_toggle"><a href="index.html"><img src="images/logo.png" /></a></div>
+                    <div class="nav_toggle"><a href="about-us.html">Про нас</a></div>
+                    <div class="nav_toggle"><a href="history.html">Історія</a></div>
+                    <div class="nav_toggle"><a href="road.html">Як добратись</a></div>
+                    <div class="nav_toggle"><a href="time.html">Час відвідування та ціни</a></div>
+                    <div class="nav_toggle gallery-item">
+                        <a href="gallery.html">Галерея</a>
+                        <ul>
+                            <li><a href="part1.html">Частина 1</a></li>
+                            <li><a href="part2.html">Частина 2</a></li>
+                            <li><a href="part3.html">Частина 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_toggle"><a href="contact.html">Контакти</a></div>
+                    <div class="inst">
+                        <a href="https://www.instagram.com/museelouvre/?igshid=1c13icd83vuh4" target="_blank"><img class="nav_toggle_p" src="images/inst1.png" width="50" height="50" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-container">
+            <h2>ПРО НАС</h2>
+            Лувр - один з найбільш відомих у світі, третє за величиною (160 тисяч квадратних метрів) і найбільш відвідуване зібрання творів мистецтва. У рік тут буває більше 9 мільйонів чоловік. У Луврі зберігається понад 300 тисяч експонатів, але ми можемо побачити лише 35 тисяч з них. Причина та в тому, що для всіх цих багатств не вистачить ніяких виставкових площ при всіх гігантських розмірах музею, і в тому, що багатьом культурним безцінний потрібні особливі умови зберігання: довго показувати їх публіці не можна, можуть не витримати підвищеного до себе уваги, і тоді вже ніяка реставрація не допоможе.
+        </div>
+    </div>
+
+   
+    <script>
+        $(document).ready(function () {
+            $('#mob-menu').sidr({
+                name: 'sidr',
+                speed: 200,
+                side: 'left',
+                source: null,
+                renaming: true,
+                body: 'body',
+                displace: true,
+                timing: 'ease',
+                method: 'toggle',
+                bind: 'touchstart click',
+                onOpen: function onOpen() { },
+                onClose: function onClose() { },
+                onOpenEnd: function onOpenEnd() { },
+                onCloseEnd: function onCloseEnd() { }
+            });
+        });
+    </script>
+</body>
+</html>

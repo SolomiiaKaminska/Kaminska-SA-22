@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/sidr.dark.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/sidr.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Open+Sans|Oswald|PT+Serif:400,700|Playfair+Display:400,400i|Poppins:400i,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>Louvre</title>
+</head>
+<body>        
+        <div class="container">
+            <div class="nav">
+                <div class="mob-header-menu">
+                    <a id="mob-menu" href="#sidr"><img src="images/mob-menu.png" /></a>
+                    <span><a href="index.html"><img src="images/logo.png" /></a></span>
+                </div>
+                <div id="sidr">
+                    <ul>
+                        <li class=" active"><a href="index.html" class="active">Головна</a></li>
+                        <li><a href="about-us.html">Про нас</a></li>
+                        <li><a href="history.html">Історія </a></li>
+                        <li><a href="road.html">Як добратись </a></li>
+                        <li><a href="time.html">Час відвідування та ціни</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="mainmenu">
+                    <div class="nav_toggle"><a href="index.html"><img src="images/logo.png" /></a></div>
+                    <div class="nav_toggle"><a href="about-us.html">Про нас</a></div>
+                    <div class="nav_toggle"><a href="history.html">Історія</a></div>
+                    <div class="nav_toggle"><a href="road.html">Як добратись</a></div>
+                    <div class="nav_toggle"><a href="time.html">Час відвідування та ціни</a></div>
+                    <div class="nav_toggle gallery-item">
+                        <a href="gallery.html">Галерея</a>
+                        <ul>
+                            <li><a href="part1.html">Частина 1</a></li>
+                            <li><a href="part2.html">Частина 2</a></li>
+                            <li><a href="part3.html">Частина 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_toggle"><a href="contact.html">Контакти</a></div>
+                    <div class="inst">
+                        <a href="https://www.instagram.com/museelouvre/?igshid=1c13icd83vuh4" target="_blank"><img class="nav_toggle_p" src="images/inst1.png" width="50" height="50" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <video autoplay loop muted playsinline style="min-width:100%; min-height:100%">
+                <source css="videoscss" src="video/nlv.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="title">Louvre</div>
+    <script>
+        $(document).ready(function () {
+            $('#mob-menu').sidr({
+                name: 'sidr',
+                speed: 200,
+                side: 'left',
+                source: null,
+                renaming: true,
+                body: 'body',
+                displace: true,
+                timing: 'ease',
+                method: 'toggle',
+                bind: 'touchstart click',
+                onOpen: function onOpen() { },
+                onClose: function onClose() { },
+                onOpenEnd: function onOpenEnd() { },
+                onCloseEnd: function onCloseEnd() { }
+            });
+        });
+    </script>
+</body>
+</html>
